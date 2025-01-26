@@ -1,9 +1,51 @@
-/* 
-    CSS Guide 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-    1.  General Styles (Normalize)
+body {
+    background: linear-gradient(to top, #363636, #DCDCDC );
+    font-family: fantasy;
+    font-size: 18px;
+}
 
- */
+.hero {
+    height: auto;
+    width: 100%;
+}
 
+#products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
 
- /* 1. ---General Styles--- */
+.grid-con {
+   display: grid;
+   grid-template-columns: repeat(4, minmax(0, 1fr));
+   max-width: 100%;
+   margin: 0 auto;
+
+}
+@media screen and (min-width: 768px) {
+    #products {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .grid-con {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        
+    }
+   
+}
+
+@media screen and (min-width: 1200px) {
+    #products {
+        grid-template-columns: repeat(12, 1fr); 
+    }
+
+    .grid-con {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        
+    }
+}
