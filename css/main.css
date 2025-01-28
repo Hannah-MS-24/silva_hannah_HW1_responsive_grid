@@ -36,12 +36,17 @@ body {
 
 }
 
+
 .desktop-only{
     display: none;
 }
 
 #footer-nav {
-    text-align: center;
+    height: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -63,7 +68,11 @@ body {
     }
 
     #footer-nav {
-        text-align: center;
+        height: 180px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
    
 }
@@ -91,6 +100,10 @@ body {
     }
 
     #footer-nav {
-        text-align: center;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
     }
 }
