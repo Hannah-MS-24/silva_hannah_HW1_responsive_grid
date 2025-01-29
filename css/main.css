@@ -36,9 +36,16 @@ body {
 
 }
 
-
 .desktop-only{
     display: none;
+}
+
+#services .box {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #footer-nav {
@@ -95,8 +102,12 @@ body {
     }
 
     .desktop-only {
-        display: block;
+        display: flex;
         text-align: center;
+        height: 400px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     #footer-nav {
