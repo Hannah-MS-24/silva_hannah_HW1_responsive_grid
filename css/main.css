@@ -15,14 +15,12 @@ body {
 }
 
 #hero {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     height: 200px;
     width: 100%;
 }
 
 #products {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     height: 300px;
     width: 100%;
@@ -62,6 +60,11 @@ body {
         height: 180px;
         width: 100%;
     }
+
+    .desktop-only{
+        display: none;
+    }
+    
 
     #products {
         grid-template-columns: repeat(12, 1fr);
